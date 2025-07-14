@@ -1,0 +1,26 @@
+{
+  "name": "mojo-lapper-presentation",
+  "version": "1.0.0",
+  "description": "Mojo-Lapper hackathon project presentation for Modular Community Meeting",
+  "scripts": {
+    "start": "marp --server .",
+    "build": "marp presentation.md -o dist/presentation.html",
+    "build:pdf": "marp --html --allow-local-files presentation.md -o dist/presentation.pdf",
+    "build:pptx": "marp --html --allow-local-files presentation.md -o dist/presentation.pptx",
+    "watch": "marp -w presentation.md -o dist/presentation.html",
+    "serve": "marp --server . --html",
+    "dev": "marp --html --server . --watch"
+  },
+  "keywords": [
+    "mojo",
+    "mojo-lapper",
+    "presentation",
+    "marp",
+    "modular"
+  ],
+  "author": "Seth Stadick",
+  "license": "MIT",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0"
+  }
+}
